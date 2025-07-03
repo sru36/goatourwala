@@ -387,6 +387,101 @@
       </div>
     </section>
 
+    <!-- Mobile Trip Planning Section -->
+    <section
+      class="xl:hidden bg-gradient-to-r from-blue-600 to-orange-500 py-8"
+    >
+      <div class="container mx-auto px-6">
+        <div class="bg-white rounded-lg p-6 shadow-lg">
+          <h3
+            class="text-2xl font-garamond font-bold mb-6 text-gray-800 text-center"
+          >
+            Plan Your Goa Trip
+          </h3>
+
+          <div class="space-y-4">
+            <div>
+              <label class="text-gray-700 text-sm mb-2 block font-semibold"
+                >Duration (Days)</label
+              >
+              <input
+                type="range"
+                min="1"
+                max="14"
+                value="7"
+                class="w-full"
+                id="mobile-duration-range"
+              />
+              <div class="text-gray-600 text-sm mt-1">
+                <span id="mobile-duration-value">7</span> Days
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label class="text-gray-700 text-sm mb-2 block font-semibold"
+                  >Check-in</label
+                >
+                <input
+                  type="date"
+                  class="w-full p-3 rounded border border-gray-300 focus:border-blue-500 focus:outline-none"
+                />
+              </div>
+              <div>
+                <label class="text-gray-700 text-sm mb-2 block font-semibold"
+                  >Check-out</label
+                >
+                <input
+                  type="date"
+                  class="w-full p-3 rounded border border-gray-300 focus:border-blue-500 focus:outline-none"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label class="text-gray-700 text-sm mb-2 block font-semibold"
+                >Guests</label
+              >
+              <select
+                class="w-full p-3 rounded border border-gray-300 focus:border-blue-500 focus:outline-none"
+              >
+                <option>1 Guest</option>
+                <option>2 Guests</option>
+                <option>3-4 Guests</option>
+                <option>5+ Guests</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="text-gray-700 text-sm mb-2 block font-semibold"
+                >Interests</label
+              >
+              <div class="grid grid-cols-2 gap-2 text-sm">
+                <label class="flex items-center text-gray-700">
+                  <input type="checkbox" class="mr-2 text-blue-600" /> Beaches
+                </label>
+                <label class="flex items-center text-gray-700">
+                  <input type="checkbox" class="mr-2 text-blue-600" /> Nightlife
+                </label>
+                <label class="flex items-center text-gray-700">
+                  <input type="checkbox" class="mr-2 text-blue-600" /> Heritage
+                </label>
+                <label class="flex items-center text-gray-700">
+                  <input type="checkbox" class="mr-2 text-blue-600" /> Adventure
+                </label>
+              </div>
+            </div>
+
+            <button
+              class="w-full bg-gradient-to-r from-blue-600 to-orange-500 text-white py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-orange-600 transition-all"
+            >
+              Search Packages
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Beach Services Section -->
     <section
       class="relative py-20"
