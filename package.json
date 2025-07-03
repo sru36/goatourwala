@@ -1,0 +1,21 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "Media project with video files",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx http-server . -p 3000 -c-1",
+    "start": "npm run dev",
+    "build": "echo 'No build process needed for static files'"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "media",
+    "video"
+  ],
+  "author": "",
+  "license": "ISC"
+}
