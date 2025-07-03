@@ -1,0 +1,1684 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goa Tourwala - Discover the Magic of Goa</title>
+    <meta
+      name="description"
+      content="Experience the best of Goa with Goa Tourwala - beaches, culture, heritage, and adventures await you"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Alegreya+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- Custom Styles -->
+    <style>
+      :root {
+        --primary-burgundy: rgb(134, 0, 56);
+        --secondary-red: rgb(208, 9, 54);
+        --text-dark: rgb(68, 4, 11);
+        --text-body: rgb(38, 0, 0);
+        --bg-light: rgb(245, 244, 242);
+        --bg-secondary: rgb(246, 244, 241);
+        --bg-accent: rgb(234, 232, 220);
+        --goa-blue: rgb(0, 123, 191);
+        --goa-orange: rgb(255, 140, 0);
+        --goa-green: rgb(46, 125, 50);
+      }
+
+      body {
+        font-family: "Alegreya Sans", sans-serif;
+        background-color: var(--bg-light);
+        overflow-x: hidden;
+      }
+
+      .font-garamond {
+        font-family: "EB Garamond", serif;
+      }
+
+      .hero-gradient {
+        background: linear-gradient(
+          174deg,
+          var(--goa-blue) 33%,
+          var(--goa-orange) 112%
+        );
+      }
+
+      .burgundy-gradient {
+        background: linear-gradient(
+          174deg,
+          var(--primary-burgundy) 33%,
+          var(--secondary-red) 112%
+        );
+      }
+
+      .video-overlay {
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+      }
+
+      .scroll-smooth {
+        scroll-behavior: smooth;
+      }
+
+      .swiper-pagination-bullet-active {
+        background: var(--goa-orange) !important;
+      }
+
+      .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+        transition: all 0.3s ease;
+      }
+
+      .whatsapp-float:hover {
+        transform: scale(1.1);
+      }
+
+      .call-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 120px;
+        right: 40px;
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+        transition: all 0.3s ease;
+      }
+
+      .call-float:hover {
+        transform: scale(1.1);
+        background-color: #0056b3;
+      }
+
+      .nav-tab {
+        transition: all 0.3s ease;
+        border-top: 3px solid transparent;
+      }
+
+      .nav-tab.active {
+        background: rgba(255, 255, 255, 0.9);
+        border-top-color: var(--goa-orange);
+      }
+
+      .card-hover {
+        transition: all 0.3s ease;
+      }
+
+      .card-hover:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      }
+
+      .section-spacing {
+        margin: 140px 0;
+      }
+
+      @media (max-width: 768px) {
+        .section-spacing {
+          margin: 80px 0;
+        }
+      }
+
+      .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80px;
+        height: 80px;
+        background: rgba(255, 0, 0, 0.8);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .play-button:hover {
+        background: rgba(255, 0, 0, 1);
+        transform: translate(-50%, -50%) scale(1.1);
+      }
+
+      .slider {
+        -webkit-appearance: none;
+        appearance: none;
+        height: 6px;
+        background: rgba(255, 255, 255, 0.3);
+        outline: none;
+        border-radius: 3px;
+      }
+
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        background: white;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 2px solid #1e40af;
+      }
+
+      .slider::-moz-range-thumb {
+        width: 20px;
+        height: 20px;
+        background: white;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 2px solid #1e40af;
+      }
+
+      /* Dropdown hover effects */
+      .dropdown-menu {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+      }
+
+      .dropdown:hover .dropdown-menu {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body class="scroll-smooth">
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/918999732703" class="whatsapp-float" target="_blank">
+      <i class="fab fa-whatsapp" style="margin-top: 16px"></i>
+    </a>
+
+    <!-- Call Now Float Button -->
+    <a href="tel:+918999732703" class="call-float" target="_blank">
+      <i class="fas fa-phone" style="margin-top: 16px"></i>
+    </a>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative h-screen overflow-hidden">
+      <!-- Video Background -->
+      <video
+        autoplay
+        muted
+        loop
+        class="absolute inset-0 w-full h-full object-cover"
+        preload="metadata"
+        playsinline
+      >
+        <source src="adventure.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Video Overlay -->
+      <div class="absolute inset-0 video-overlay"></div>
+
+      <!-- Navigation Header -->
+      <nav class="absolute top-0 w-full z-30 bg-transparent">
+        <div class="container mx-auto px-6 py-4">
+          <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fe950205e322542039a1d8b11bc8660cc%2Fc58f4b7e6f9a4c7d8d33e78eb966ca0e?format=webp&width=60"
+                alt="Goa Tourwala"
+                class="h-14 w-14 mr-3 rounded-full"
+              />
+              <h1 class="text-white text-2xl font-garamond font-bold">
+                Goa Tourwala
+              </h1>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center space-x-8">
+              <!-- Experiences Dropdown -->
+              <div class="relative group">
+                <button
+                  class="text-white hover:text-orange-300 transition-colors flex items-center"
+                >
+                  EXPERIENCES
+                  <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                </button>
+                <div
+                  class="absolute top-full left-0 bg-white shadow-2xl rounded-lg p-12 mt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-screen max-w-7xl transform -translate-x-1/2"
+                  style="width: 95vw; min-height: 400px"
+                >
+                  <div class="grid grid-cols-4 gap-16 min-h-80">
+                    <!-- Cruise in goa -->
+                    <div>
+                      <h3
+                        class="font-bold text-blue-600 mb-4 border-b border-gray-200 pb-3 text-lg"
+                      >
+                        Cruise in goa
+                      </h3>
+                      <ul class="space-y-3 text-base">
+                        <li>
+                          <a
+                            href="adventure-cruise.html"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >Adventure cruise</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="adventure-cruise-watersport.html"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >Adventure cruise With Watersport</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="dinner-cruise.html"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >Dinner cruise</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="sunset-cruise.html"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >Sunset Cruise</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="yacht-rent.html"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >Yacht on rent</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="cruise-rent.html"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >Cruise on rent</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- Sightseen -->
+                    <div>
+                      <h3
+                        class="font-bold text-blue-600 mb-4 border-b border-gray-200 pb-3 text-lg"
+                      >
+                        Sightseen
+                      </h3>
+                      <ul class="space-y-3 text-base">
+                        <li>
+                          <a
+                            href="north-goa-sightseen.html"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >North goa sightseen</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="south-goa-sightseen.html"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >South goa sightseen</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="dolphin-sightseen-tour.html"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >Dolphin sightseen tour</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- Adventure Sports -->
+                    <div>
+                      <h3
+                        class="font-bold text-blue-600 mb-4 border-b border-gray-200 pb-3 text-lg"
+                      >
+                        Adventure Sports
+                      </h3>
+                      <ul class="space-y-3 text-base">
+                        <li>
+                          <a
+                            href="scuba-diving.html"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >Scuba Diving</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="watersports.html"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >Watersports</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="flyboarding.html"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >Flyboarding</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="bungee-jumping.html"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >Bungee jumping</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="dudhsagar-waterfall-tour.html"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >Dudhsagar waterfall tour</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="crocodile-trip-goa.html"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >Crocodile Trip In Goa</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- Scuba With WaterSports -->
+                    <div>
+                      <h3
+                        class="font-bold text-blue-600 mb-4 border-b border-gray-200 pb-3 text-lg"
+                      >
+                        Scuba With WaterSports
+                      </h3>
+                      <ul class="space-y-3 text-base">
+                        <li>
+                          <a
+                            href="scuba-combo-grand-island.html"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >Scuba Combo Tour At Grand Island</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="scuba-watersports-malvan.html"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >Scuba with Watersports At malvan</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tour Packages Dropdown -->
+              <div class="relative group">
+                <button
+                  class="text-white hover:text-orange-300 transition-colors flex items-center"
+                >
+                  TOUR PACKAGES
+                  <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                </button>
+                <div
+                  class="absolute top-full left-0 bg-white shadow-2xl rounded-lg p-8 mt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-96 transform -translate-x-1/4"
+                >
+                  <ul class="space-y-4 text-base">
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-600 hover:text-blue-600 transition-colors block py-1"
+                        >Goa honeymoon package</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-600 hover:text-blue-600 transition-colors block py-1"
+                        >Goa tour Packages</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-600 hover:text-blue-600 transition-colors block py-1"
+                        >Business tour package</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-600 hover:text-blue-600 transition-colors block py-1"
+                        >Family tour package</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-600 hover:text-blue-600 transition-colors block py-1"
+                        >Adventure tour package</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-600 hover:text-blue-600 transition-colors block py-1"
+                        >GOA Hampi Tour</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-600 hover:text-blue-600 transition-colors block py-1"
+                        >Goa murudeshwar</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-600 hover:text-blue-600 transition-colors block py-1"
+                        >Wildernest nature trip</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-600 hover:text-blue-600 transition-colors block py-1"
+                        >Houseboat</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Plan Your Trip Dropdown -->
+              <div class="relative group">
+                <button
+                  class="text-white hover:text-orange-300 transition-colors flex items-center"
+                >
+                  PLAN YOUR TRIP
+                  <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                </button>
+                <div
+                  class="absolute top-full left-0 bg-white shadow-2xl rounded-lg p-8 mt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-96 transform -translate-x-1/4"
+                >
+                  <ul class="space-y-4 text-base">
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-600 hover:text-blue-600 transition-colors block py-1"
+                        >Accommodations - Hotels</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-600 hover:text-blue-600 transition-colors block py-1"
+                        >Accommodations - Homestays</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-600 hover:text-blue-600 transition-colors block py-1"
+                        >Itineraries</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-600 hover:text-blue-600 transition-colors block py-1"
+                        >Tourist Guides</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-600 hover:text-blue-600 transition-colors block py-1"
+                        >Travel Agents</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div
+                class="text-white hover:text-orange-300 transition-colors cursor-pointer"
+              >
+                <i class="fas fa-search"></i> SEARCH
+              </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="lg:hidden text-white text-2xl" id="mobile-menu-btn">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Content -->
+      <div class="absolute inset-0 flex items-center justify-center z-20 px-4">
+        <div class="text-center text-white" data-aos="fade-up">
+          <h2
+            class="text-4xl md:text-6xl lg:text-8xl font-garamond font-bold mb-4 md:mb-6"
+          >
+            Discover Goa
+          </h2>
+          <p
+            class="text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 max-w-2xl mx-auto"
+          >
+            Experience the magic of golden beaches, vibrant culture, and endless
+            adventures
+          </p>
+          <button
+            class="bg-orange-500 hover:bg-orange-600 text-white px-6 md:px-8 py-2 md:py-3 rounded-lg font-semibold transition-colors text-base md:text-lg"
+          >
+            Start Your Journey
+          </button>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <div
+        class="absolute bottom-0 left-0 flex w-full md:w-1/2 z-20 md:ml-20 lg:ml-20"
+      >
+        <div
+          class="nav-tab active bg-white bg-opacity-80 px-3 md:px-6 py-3 md:py-4 cursor-pointer flex-1 text-center"
+          data-category="beaches"
+        >
+          <span class="font-semibold text-gray-800 text-sm md:text-base"
+            >Beaches</span
+          >
+        </div>
+        <div
+          class="nav-tab bg-black bg-opacity-50 px-3 md:px-6 py-3 md:py-4 cursor-pointer flex-1 text-center"
+          data-category="heritage"
+        >
+          <span class="font-semibold text-white text-sm md:text-base"
+            >Heritage</span
+          >
+        </div>
+        <div
+          class="nav-tab bg-black bg-opacity-50 px-3 md:px-6 py-3 md:py-4 cursor-pointer flex-1 text-center"
+          data-category="nightlife"
+        >
+          <span class="font-semibold text-white text-sm md:text-base"
+            >Nightlife</span
+          >
+        </div>
+        <div
+          class="nav-tab bg-black bg-opacity-50 px-3 md:px-6 py-3 md:py-4 cursor-pointer flex-1 text-center"
+          data-category="culture"
+        >
+          <span class="font-semibold text-white text-sm md:text-base"
+            >Culture</span
+          >
+        </div>
+      </div>
+
+      <!-- Trip Planning Form -->
+      <div class="absolute bottom-8 right-8 hidden xl:block z-30 w-80">
+        <div class="bg-orange-500 bg-opacity-95 p-6 rounded-lg shadow-2xl">
+          <h3 class="text-white text-2xl font-garamond font-bold mb-6">
+            Plan Your Goa Trip
+          </h3>
+
+          <div class="space-y-4">
+            <div>
+              <label class="text-white text-sm mb-2 block font-medium"
+                >Duration (Days)</label
+              >
+              <div class="relative">
+                <input
+                  type="range"
+                  min="1"
+                  max="14"
+                  value="7"
+                  class="w-full h-2 bg-blue-300 rounded-lg appearance-none cursor-pointer slider"
+                  id="duration-range"
+                />
+                <div class="flex justify-between text-xs text-blue-200 mt-1">
+                  <span>1</span>
+                  <span>14</span>
+                </div>
+              </div>
+              <div class="text-white text-lg font-semibold mt-2">
+                <span id="duration-value">7</span> Days
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <label class="text-white text-sm mb-2 block font-medium"
+                  >Check-in</label
+                >
+                <input
+                  type="date"
+                  class="w-full p-3 rounded border-none text-gray-800 focus:outline-none focus:ring-2 focus:ring-white"
+                />
+              </div>
+              <div>
+                <label class="text-white text-sm mb-2 block font-medium"
+                  >Check-out</label
+                >
+                <input
+                  type="date"
+                  class="w-full p-3 rounded border-none text-gray-800 focus:outline-none focus:ring-2 focus:ring-white"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label class="text-white text-sm mb-2 block font-medium"
+                >Guests</label
+              >
+              <select
+                class="w-full p-3 rounded border-none text-gray-800 focus:outline-none focus:ring-2 focus:ring-white"
+              >
+                <option>1 Guest</option>
+                <option>2 Guests</option>
+                <option>3-4 Guests</option>
+                <option>5+ Guests</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="text-white text-sm mb-2 block font-medium"
+                >Interests</label
+              >
+              <div class="grid grid-cols-2 gap-3 text-sm">
+                <label class="flex items-center text-white cursor-pointer">
+                  <input type="checkbox" class="mr-2 accent-white" /> Beaches
+                </label>
+                <label class="flex items-center text-white cursor-pointer">
+                  <input type="checkbox" class="mr-2 accent-white" /> Nightlife
+                </label>
+                <label class="flex items-center text-white cursor-pointer">
+                  <input type="checkbox" class="mr-2 accent-white" /> Heritage
+                </label>
+                <label class="flex items-center text-white cursor-pointer">
+                  <input type="checkbox" class="mr-2 accent-white" /> Adventure
+                </label>
+              </div>
+            </div>
+
+            <button
+              class="w-full bg-white text-blue-600 py-3 rounded font-bold hover:bg-gray-100 transition-colors text-lg shadow-lg"
+            >
+              Search Packages
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mobile Trip Planning Section -->
+    <section
+      class="xl:hidden bg-gradient-to-r from-blue-600 to-orange-500 py-8"
+    >
+      <div class="container mx-auto px-6">
+        <div class="bg-white rounded-lg p-6 shadow-lg">
+          <h3
+            class="text-2xl font-garamond font-bold mb-6 text-gray-800 text-center"
+          >
+            Plan Your Goa Trip
+          </h3>
+
+          <div class="space-y-4">
+            <div>
+              <label class="text-gray-700 text-sm mb-2 block font-semibold"
+                >Duration (Days)</label
+              >
+              <input
+                type="range"
+                min="1"
+                max="14"
+                value="7"
+                class="w-full"
+                id="mobile-duration-range"
+              />
+              <div class="text-gray-600 text-sm mt-1">
+                <span id="mobile-duration-value">7</span> Days
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label class="text-gray-700 text-sm mb-2 block font-semibold"
+                  >Check-in</label
+                >
+                <input
+                  type="date"
+                  class="w-full p-3 rounded border border-gray-300 focus:border-blue-500 focus:outline-none"
+                />
+              </div>
+              <div>
+                <label class="text-gray-700 text-sm mb-2 block font-semibold"
+                  >Check-out</label
+                >
+                <input
+                  type="date"
+                  class="w-full p-3 rounded border border-gray-300 focus:border-blue-500 focus:outline-none"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label class="text-gray-700 text-sm mb-2 block font-semibold"
+                >Guests</label
+              >
+              <select
+                class="w-full p-3 rounded border border-gray-300 focus:border-blue-500 focus:outline-none"
+              >
+                <option>1 Guest</option>
+                <option>2 Guests</option>
+                <option>3-4 Guests</option>
+                <option>5+ Guests</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="text-gray-700 text-sm mb-2 block font-semibold"
+                >Interests</label
+              >
+              <div class="grid grid-cols-2 gap-2 text-sm">
+                <label class="flex items-center text-gray-700">
+                  <input type="checkbox" class="mr-2 text-blue-600" /> Beaches
+                </label>
+                <label class="flex items-center text-gray-700">
+                  <input type="checkbox" class="mr-2 text-blue-600" /> Nightlife
+                </label>
+                <label class="flex items-center text-gray-700">
+                  <input type="checkbox" class="mr-2 text-blue-600" /> Heritage
+                </label>
+                <label class="flex items-center text-gray-700">
+                  <input type="checkbox" class="mr-2 text-blue-600" /> Adventure
+                </label>
+              </div>
+            </div>
+
+            <button
+              class="w-full bg-gradient-to-r from-blue-600 to-orange-500 text-white py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-orange-600 transition-all"
+            >
+              Search Packages
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beach Services Section -->
+    <section
+      class="relative py-20"
+      style="
+        background-color: var(--bg-secondary);
+        background-image: url(&quot;https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80&quot;);
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+      <div class="container mx-auto px-6 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div></div>
+          <div class="text-white" data-aos="fade-left">
+            <h2 class="text-4xl font-garamond font-bold mb-6">
+              Premium Beach Services
+            </h2>
+            <p class="text-lg mb-6">
+              Experience luxury on Goa's pristine beaches with our premium
+              services including water sports, beachside dining, and exclusive
+              beach club access.
+            </p>
+            <button
+              class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+            >
+              Explore Services
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promotional Banner -->
+    <section class="relative py-16" style="background-color: var(--bg-accent)">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div class="relative">
+            <img
+              src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Goa Heritage"
+              class="w-full h-96 object-cover rounded-lg"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-30 rounded-lg flex items-center justify-center"
+            >
+              <div class="text-white text-center">
+                <h3 class="text-3xl font-garamond font-bold mb-4">
+                  Goa Heritage Tours
+                </h3>
+                <p class="text-lg">
+                  Discover 500 years of Portuguese influence
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-6" data-aos="fade-up">
+            <h2 class="text-4xl font-garamond font-bold text-gray-800">
+              Experience Authentic Goa
+            </h2>
+            <p class="text-gray-600 leading-relaxed">
+              From the historic churches of Old Goa to the vibrant markets of
+              Panaji, immerse yourself in the unique blend of Indian and
+              Portuguese cultures that makes Goa special.
+            </p>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="text-center p-4 bg-white rounded-lg shadow">
+                <h4 class="font-bold text-blue-600">15+</h4>
+                <p class="text-sm text-gray-600">UNESCO Sites</p>
+              </div>
+              <div class="text-center p-4 bg-white rounded-lg shadow">
+                <h4 class="font-bold text-orange-500">50+</h4>
+                <p class="text-sm text-gray-600">Beaches</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="videos" class="section-spacing">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-5xl font-garamond font-bold text-center mb-16 text-gray-800 tracking-wider"
+          data-aos="fade-up"
+        >
+          VIDEOS
+        </h2>
+
+        <div class="max-w-6xl mx-auto">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Main Video -->
+            <div class="lg:col-span-2">
+              <div
+                class="relative bg-black rounded-lg overflow-hidden h-96"
+                data-aos="fade-right"
+              >
+                <video
+                  class="w-full h-full object-cover"
+                  poster="https://images.unsplash.com/photo-1571619489510-9f7c2432d2b6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                >
+                  <source src="adventure.mp4" type="video/mp4" />
+                </video>
+                <div class="play-button" onclick="playVideo(this)">
+                  <i class="fas fa-play"></i>
+                </div>
+                <div class="absolute bottom-4 left-4 text-white">
+                  <h3 class="font-bold text-lg">Adventure in Goa</h3>
+                  <p class="text-sm opacity-80">
+                    Thrilling water sports and activities
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Video Playlist -->
+            <div class="space-y-4" data-aos="fade-left">
+              <div
+                class="bg-white rounded-lg p-4 shadow-lg cursor-pointer hover:shadow-xl transition-shadow"
+              >
+                <div class="flex gap-3">
+                  <div
+                    class="relative w-24 h-16 bg-black rounded overflow-hidden flex-shrink-0"
+                  >
+                    <video class="w-full h-full object-cover">
+                      <source src="cruise.mp4" type="video/mp4" />
+                    </video>
+                    <div
+                      class="absolute inset-0 flex items-center justify-center"
+                    >
+                      <i class="fas fa-play text-white text-xs"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-sm text-gray-800">
+                      Goa River Cruise
+                    </h4>
+                    <p class="text-xs text-gray-600">
+                      Sunset cruise along Mandovi River
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-white rounded-lg p-4 shadow-lg cursor-pointer hover:shadow-xl transition-shadow"
+              >
+                <div class="flex gap-3">
+                  <div
+                    class="relative w-24 h-16 bg-black rounded overflow-hidden flex-shrink-0"
+                  >
+                    <video class="w-full h-full object-cover">
+                      <source src="culture.mp4" type="video/mp4" />
+                    </video>
+                    <div
+                      class="absolute inset-0 flex items-center justify-center"
+                    >
+                      <i class="fas fa-play text-white text-xs"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-sm text-gray-800">
+                      Goan Culture
+                    </h4>
+                    <p class="text-xs text-gray-600">
+                      Traditional festivals and music
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-white rounded-lg p-4 shadow-lg cursor-pointer hover:shadow-xl transition-shadow"
+              >
+                <div class="flex gap-3">
+                  <div
+                    class="relative w-24 h-16 bg-gray-300 rounded overflow-hidden flex-shrink-0"
+                  >
+                    <img
+                      src="https://images.unsplash.com/photo-1544829047-b0c8c9d30bf2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                      alt="Beach"
+                      class="w-full h-full object-cover"
+                    />
+                    <div
+                      class="absolute inset-0 flex items-center justify-center"
+                    >
+                      <i class="fas fa-play text-white text-xs"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-sm text-gray-800">
+                      Beach Paradise
+                    </h4>
+                    <p class="text-xs text-gray-600">
+                      Explore pristine beaches of Goa
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reasons to Explore Goa -->
+    <section id="reasons" class="py-20">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-5xl font-garamond font-bold mb-16 text-gray-800 tracking-wider"
+          data-aos="fade-up"
+        >
+          REASONS TO EXPLORE GOA
+        </h2>
+
+        <div class="swiper reasons-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div class="relative h-96 rounded-lg overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Goa Beaches"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="space-y-4">
+                  <h3 class="text-3xl font-garamond font-bold text-gray-800">
+                    Golden Beaches
+                  </h3>
+                  <p class="text-gray-600 leading-relaxed">
+                    Goa boasts over 50 stunning beaches along its 100km
+                    coastline. From the vibrant shores of Baga and Calangute to
+                    the serene stretches of Palolem and Agonda, each beach
+                    offers its own unique charm and experiences.
+                  </p>
+                  <div class="flex space-x-4">
+                    <span
+                      class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                      >Water Sports</span
+                    >
+                    <span
+                      class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm"
+                      >Sunsets</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div class="relative h-96 rounded-lg overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1576089172869-4f5f6f315620?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Goa Heritage"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="space-y-4">
+                  <h3 class="text-3xl font-garamond font-bold text-gray-800">
+                    Rich Heritage
+                  </h3>
+                  <p class="text-gray-600 leading-relaxed">
+                    Experience 500 years of Portuguese colonial history through
+                    magnificent churches, colonial architecture, and UNESCO
+                    World Heritage sites that tell the story of cultural fusion.
+                  </p>
+                  <div class="flex space-x-4">
+                    <span
+                      class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm"
+                      >UNESCO Sites</span
+                    >
+                    <span
+                      class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm"
+                      >Architecture</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div class="relative h-96 rounded-lg overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1540759165585-795fd65e1f9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Goa Cuisine"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="space-y-4">
+                  <h3 class="text-3xl font-garamond font-bold text-gray-800">
+                    Culinary Delights
+                  </h3>
+                  <p class="text-gray-600 leading-relaxed">
+                    Savor the unique Indo-Portuguese cuisine featuring fresh
+                    seafood, aromatic spices, and traditional dishes like fish
+                    curry rice, bebinca, and feni that reflect Goa's cultural
+                    heritage.
+                  </p>
+                  <div class="flex space-x-4">
+                    <span
+                      class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm"
+                      >Seafood</span
+                    >
+                    <span
+                      class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm"
+                      >Fusion Cuisine</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination mt-8"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Stories Section -->
+    <section
+      id="stories"
+      class="py-20"
+      style="background-color: rgb(241, 238, 233)"
+    >
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-5xl font-garamond font-bold text-center mb-16 text-gray-800 tracking-wider"
+          data-aos="fade-up"
+        >
+          OUR STORIES
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-lg card-hover"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1566552881013-5e219c3a4c84?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+              alt="Story 1"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-garamond font-bold mb-3 text-gray-800">
+                Hidden Gems of South Goa
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                Discover the serene beaches and traditional villages that
+                showcase the authentic charm of Goa away from the crowds.
+              </p>
+              <a
+                href="#"
+                class="text-blue-600 font-semibold text-sm hover:text-blue-800 transition-colors"
+                >Read More →</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-lg card-hover"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1578321272176-b7bbc0679853?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+              alt="Story 2"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-garamond font-bold mb-3 text-gray-800">
+                Festivals of Goa
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                Experience the vibrant carnival celebrations and traditional
+                festivals that bring Goa's cultural heritage to life.
+              </p>
+              <a
+                href="#"
+                class="text-blue-600 font-semibold text-sm hover:text-blue-800 transition-colors"
+                >Read More →</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-lg card-hover"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1539650116574-75c0c6d31f32?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+              alt="Story 3"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-garamond font-bold mb-3 text-gray-800">
+                Goan Architecture
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                Explore the unique blend of Portuguese and Indian architectural
+                styles that define Goa's historical landscape.
+              </p>
+              <a
+                href="#"
+                class="text-blue-600 font-semibold text-sm hover:text-blue-800 transition-colors"
+                >Read More →</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trip Packages Section -->
+    <section id="trip-packages" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-4xl font-garamond font-bold text-center mb-4 text-gray-800"
+        >
+          Goa Trip Packages In Goa
+        </h2>
+        <div class="w-16 h-1 bg-blue-500 mx-auto mb-16"></div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Adventure Cruise Package -->
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow group"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Adventure cruise in Goa"
+                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div
+                class="absolute top-3 left-3 bg-orange-500 text-white px-2 py-1 rounded text-xs font-semibold"
+              >
+                Featured
+              </div>
+              <div
+                class="absolute top-3 right-3 text-white cursor-pointer hover:text-red-500 transition-colors"
+              >
+                <i class="far fa-heart text-lg"></i>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="text-lg font-bold text-gray-800 mb-1">
+                From ₹1500.00
+              </div>
+              <div class="flex items-center text-gray-600 text-sm mb-2">
+                <i class="fas fa-map-marker-alt mr-1"></i>
+                <span>Goa India</span>
+              </div>
+              <h3 class="font-bold text-gray-800 mb-2">
+                Adventure cruise in Goa
+              </h3>
+              <div class="flex items-center mb-2">
+                <div class="flex text-yellow-400 text-sm mr-2">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <span class="text-gray-600 text-sm">155 Reviews</span>
+              </div>
+              <div class="flex items-center text-gray-600 text-sm">
+                <i class="far fa-clock mr-1"></i>
+                <span>5 hours 45 minutes</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dudhsagar Waterfall Package -->
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow group"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1571115764595-644a1f56a55c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Dudhsagar waterfall Tour in Goa"
+                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div
+                class="absolute top-3 right-3 text-white cursor-pointer hover:text-red-500 transition-colors"
+              >
+                <i class="far fa-heart text-lg"></i>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="text-lg font-bold text-gray-800 mb-1">
+                From ₹2000.00
+              </div>
+              <div class="flex items-center text-gray-600 text-sm mb-2">
+                <i class="fas fa-map-marker-alt mr-1"></i>
+                <span>Goa India</span>
+              </div>
+              <h3 class="font-bold text-gray-800 mb-2">
+                Dudhsagar waterfall Tour in Goa
+              </h3>
+              <div class="flex items-center mb-2">
+                <div class="flex text-yellow-400 text-sm mr-2">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <span class="text-gray-600 text-sm">59 Reviews</span>
+              </div>
+              <div class="flex items-center text-gray-600 text-sm">
+                <i class="far fa-clock mr-1"></i>
+                <span>1 hours 45 minutes</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Scuba Diving Package -->
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow group"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1566552881013-5e219c3a4c84?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Scuba Diving in Goa"
+                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div
+                class="absolute top-3 right-3 text-white cursor-pointer hover:text-red-500 transition-colors"
+              >
+                <i class="far fa-heart text-lg"></i>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="text-lg font-bold text-gray-800 mb-1">
+                From ₹1500.00
+              </div>
+              <div class="flex items-center text-gray-600 text-sm mb-2">
+                <i class="fas fa-map-marker-alt mr-1"></i>
+                <span>Goa India</span>
+              </div>
+              <h3 class="font-bold text-gray-800 mb-2">Scuba Diving in Goa</h3>
+              <div class="flex items-center mb-2">
+                <div class="flex text-yellow-400 text-sm mr-2">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <span class="text-gray-600 text-sm">36 Reviews</span>
+              </div>
+              <div class="flex items-center text-gray-600 text-sm">
+                <i class="far fa-clock mr-1"></i>
+                <span>2 hours 30 minutes</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- North Sightseeing Package -->
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow group"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="North Sightseeng in Goa"
+                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div
+                class="absolute top-3 right-3 text-white cursor-pointer hover:text-red-500 transition-colors"
+              >
+                <i class="far fa-heart text-lg"></i>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="text-lg font-bold text-gray-800 mb-1">
+                From ₹350.00
+              </div>
+              <div class="flex items-center text-gray-600 text-sm mb-2">
+                <i class="fas fa-map-marker-alt mr-1"></i>
+                <span>Goa India</span>
+              </div>
+              <h3 class="font-bold text-gray-800 mb-2">
+                North Sightseeng in Goa
+              </h3>
+              <div class="flex items-center mb-2">
+                <div class="flex text-yellow-400 text-sm mr-2">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <span class="text-gray-600 text-sm">89 Reviews</span>
+              </div>
+              <div class="flex items-center text-gray-600 text-sm">
+                <i class="far fa-clock mr-1"></i>
+                <span>1 hours 10 minutes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="flex justify-center mt-8 space-x-4">
+          <button
+            class="bg-gray-200 hover:bg-gray-300 text-gray-600 p-2 rounded-full transition-colors"
+          >
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button
+            class="bg-gray-200 hover:bg-gray-300 text-gray-600 p-2 rounded-full transition-colors"
+          >
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative py-12 bg-gray-900">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-white">
+          <!-- Need My Travel Help Section -->
+          <div>
+            <h4 class="text-lg font-semibold mb-4 text-white">
+              Need My Travel Help?
+            </h4>
+            <p class="text-sm text-gray-300 mb-3">
+              Got Questions ? Call us 24/7!
+            </p>
+            <div class="mb-4">
+              <div class="text-orange-500 font-semibold">Call Us:</div>
+              <div class="text-blue-400">+91 9959732703</div>
+              <div class="text-blue-400">+91 7704715979</div>
+              <div class="text-blue-400">sushil@goatourwala.in</div>
+              <div class="text-blue-400">info@goatourwala.in</div>
+            </div>
+
+            <div class="mb-4">
+              <h5 class="font-semibold text-white mb-2">Contact Info</h5>
+              <div class="text-sm text-gray-300">
+                <p>Shop No.7, Marwana Paradyes,Near Green</p>
+                <p>Medda School Arrais Waddo Nagoa</p>
+                <p>Goa,403516 India</p>
+              </div>
+            </div>
+
+            <div class="flex space-x-3">
+              <a
+                href="#"
+                class="bg-blue-600 p-2 rounded text-white hover:bg-blue-700 transition-colors"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="bg-blue-400 p-2 rounded text-white hover:bg-blue-500 transition-colors"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="bg-pink-600 p-2 rounded text-white hover:bg-pink-700 transition-colors"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                class="bg-blue-700 p-2 rounded text-white hover:bg-blue-800 transition-colors"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links 1 -->
+          <div>
+            <h4 class="text-lg font-semibold mb-4 text-white">Quick Links</h4>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-orange-400 transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-orange-400 transition-colors"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-orange-400 transition-colors"
+                  >Goa Tour Packages</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-orange-400 transition-colors"
+                  >Tourist Spots In Goa</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-orange-400 transition-colors"
+                  >Honeymoon Packages</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-orange-400 transition-colors"
+                  >Adventure Cruise In Goa</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Quick Links 2 -->
+          <div>
+            <h4 class="text-lg font-semibold mb-4 text-white">Quick Links</h4>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-orange-400 transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-orange-400 transition-colors"
+                  >Terms Of Use</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-orange-400 transition-colors"
+                  >Privacy Statement</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-orange-400 transition-colors"
+                  >Paragliding In Candolim Beach</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-orange-400 transition-colors"
+                  >Budget - Friendly Goa Tours</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Us & Request Quote -->
+          <div>
+            <h4 class="text-lg font-semibold mb-4 text-white">Contact Us</h4>
+            <p class="text-sm text-gray-300 mb-4">
+              Contact Us for get latest updates and offers
+            </p>
+
+            <div class="mb-4">
+              <h5 class="font-semibold text-white mb-3">Request A Quote</h5>
+              <div class="space-y-3">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  class="w-full p-2 bg-gray-800 border border-gray-700 rounded text-white placeholder-gray-400 focus:border-orange-500 focus:outline-none"
+                />
+                <input
+                  type="email"
+                  placeholder="Email Id"
+                  class="w-full p-2 bg-gray-800 border border-gray-700 rounded text-white placeholder-gray-400 focus:border-orange-500 focus:outline-none"
+                />
+                <input
+                  type="tel"
+                  placeholder="Phone No."
+                  class="w-full p-2 bg-gray-800 border border-gray-700 rounded text-white placeholder-gray-400 focus:border-orange-500 focus:outline-none"
+                />
+                <textarea
+                  placeholder="Message"
+                  rows="3"
+                  class="w-full p-2 bg-gray-800 border border-gray-700 rounded text-white placeholder-gray-400 focus:border-orange-500 focus:outline-none resize-none"
+                ></textarea>
+                <button
+                  class="w-full bg-green-600 text-white py-2 rounded font-semibold hover:bg-green-700 transition-colors"
+                >
+                  Send Request
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div
+          class="border-t border-gray-700 mt-8 pt-6 text-center text-sm text-gray-400"
+        >
+          <p>&copy; 2025 Goa Tourwala. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
