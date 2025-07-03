@@ -187,6 +187,8 @@
         muted
         loop
         class="absolute inset-0 w-full h-full object-cover"
+        preload="metadata"
+        playsinline
       >
         <source src="adventure.mp4" type="video/mp4" />
         Your browser does not support the video tag.
@@ -202,9 +204,9 @@
             <!-- Logo -->
             <div class="flex items-center">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fe950205e322542039a1d8b11bc8660cc%2F2f9494a5b5ee4202b87b0cfecbfb83df?format=webp&width=60"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fe950205e322542039a1d8b11bc8660cc%2Fc58f4b7e6f9a4c7d8d33e78eb966ca0e?format=webp&width=60"
                 alt="Goa Tourwala"
-                class="h-12 w-12 mr-3"
+                class="h-14 w-14 mr-3 rounded-full"
               />
               <h1 class="text-white text-2xl font-garamond font-bold">
                 Goa Tourwala
@@ -212,36 +214,334 @@
             </div>
 
             <!-- Desktop Menu -->
-            <div class="hidden md:flex items-center space-x-8">
+            <div class="hidden lg:flex items-center space-x-8">
+              <!-- Experiences Dropdown -->
+              <div class="relative group">
+                <button
+                  class="text-white hover:text-orange-300 transition-colors flex items-center"
+                >
+                  EXPERIENCES
+                  <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                </button>
+                <div
+                  class="absolute top-full left-0 bg-white shadow-2xl rounded-lg p-6 mt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-screen max-w-4xl transform -translate-x-1/4"
+                >
+                  <div class="grid grid-cols-4 gap-8">
+                    <!-- Nature -->
+                    <div>
+                      <h3
+                        class="font-bold text-gray-800 mb-3 border-b border-gray-200 pb-2"
+                      >
+                        Nature
+                      </h3>
+                      <ul class="space-y-2 text-sm">
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >DUDHSAGAR WATERFALLS</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >BREATHTAKING MOLLEM</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >SCENIC ARAMBOL</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >FUNFAIR OF MAPUSA</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >PRISTINE PALOLEM</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >SCENIC SAHAKARI SPICE</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >SERENE CAVELOSSIM</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >THRILLING AGUADA</a
+                          >
+                        </li>
+                      </ul>
+                      <a
+                        href="#"
+                        class="text-red-500 text-sm font-semibold mt-3 inline-block"
+                        >VIEW ALL</a
+                      >
+                    </div>
+
+                    <!-- Heritage -->
+                    <div>
+                      <h3
+                        class="font-bold text-gray-800 mb-3 border-b border-gray-200 pb-2"
+                      >
+                        Heritage
+                      </h3>
+                      <ul class="space-y-2 text-sm">
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >AMAZING OLD GOA</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >BEAUTY OF PANAJI</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >GRACEFUL MARGAO</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >MELODIC FONTAINHAS</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >MAGICAL LATIN QUARTER</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >MAJESTIC CHURCHES</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >REVERED TEMPLES</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >SACRED BASILICA</a
+                          >
+                        </li>
+                      </ul>
+                      <a
+                        href="#"
+                        class="text-red-500 text-sm font-semibold mt-3 inline-block"
+                        >VIEW ALL</a
+                      >
+                    </div>
+
+                    <!-- Wildlife -->
+                    <div>
+                      <h3
+                        class="font-bold text-gray-800 mb-3 border-b border-gray-200 pb-2"
+                      >
+                        Wildlife
+                      </h3>
+                      <ul class="space-y-2 text-sm">
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >DAZZLING BONDLA</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >ENCHANTING MOLLEM</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >DELIGHTFUL COTIGAO</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >PRISTINE SALIM ALI</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >ROYAL NETRAVALI</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >TRANQUIL CHORAO</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >UNTAMED JUNGLE</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >ENIGMATIC BHAGWAN</a
+                          >
+                        </li>
+                      </ul>
+                      <a
+                        href="#"
+                        class="text-red-500 text-sm font-semibold mt-3 inline-block"
+                        >VIEW ALL</a
+                      >
+                    </div>
+
+                    <!-- Spirituality -->
+                    <div>
+                      <h3
+                        class="font-bold text-gray-800 mb-3 border-b border-gray-200 pb-2"
+                      >
+                        Spirituality
+                      </h3>
+                      <ul class="space-y-2 text-sm">
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >ANCIENT MANGESHI</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >DEVOUT SHANTADURGA</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >DIVINE MAHALAXMI</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >GODDESSES ARVALEM</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >MAGNIFICENT SAPTAKOTESHWAR</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >SUBLIME RAMNATHI</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >SPIRITUAL MARUTI</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            >CELESTIAL JESUS</a
+                          >
+                        </li>
+                      </ul>
+                      <a
+                        href="#"
+                        class="text-red-500 text-sm font-semibold mt-3 inline-block"
+                        >VIEW ALL</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <a
-                href="#destinations"
+                href="#plan-trip"
                 class="text-white hover:text-orange-300 transition-colors"
-                >Destinations</a
+                >PLAN YOUR TRIP</a
               >
               <a
-                href="#experiences"
+                href="#blogs"
                 class="text-white hover:text-orange-300 transition-colors"
-                >Experiences</a
+                >BLOGS</a
               >
-              <a
-                href="#packages"
-                class="text-white hover:text-orange-300 transition-colors"
-                >Packages</a
+              <div
+                class="text-white hover:text-orange-300 transition-colors cursor-pointer"
               >
+                <i class="fas fa-search"></i> SEARCH
+              </div>
               <a
-                href="#culture"
+                href="#media"
                 class="text-white hover:text-orange-300 transition-colors"
-                >Culture</a
-              >
-              <a
-                href="#contact"
-                class="text-white hover:text-orange-300 transition-colors"
-                >Contact</a
+                >MEDIA ROOM</a
               >
             </div>
 
             <!-- Mobile Menu Button -->
-            <button class="md:hidden text-white text-2xl" id="mobile-menu-btn">
+            <button class="lg:hidden text-white text-2xl" id="mobile-menu-btn">
               <i class="fas fa-bars"></i>
             </button>
           </div>
