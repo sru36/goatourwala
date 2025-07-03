@@ -1504,7 +1504,7 @@
 
     <!-- Footer -->
     <footer
-      class="relative py-12 bg-gray-900 bg-opacity-80"
+      class="relative py-12"
       style="
         background-image: url(&quot;https://cdn.builder.io/api/v1/image/assets%2Fe950205e322542039a1d8b11bc8660cc%2F6fbf4f40c7604d7584f1b3de267722c0?format=webp&width=800&quot;);
         background-size: cover;
@@ -1512,7 +1512,9 @@
         background-attachment: fixed;
       "
     >
-      <div class="container mx-auto px-6">
+      <!-- Semi-transparent overlay -->
+      <div class="absolute inset-0 bg-gray-900 bg-opacity-75"></div>
+      <div class="container mx-auto px-6 relative z-10">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-white">
           <!-- Need My Travel Help Section -->
           <div>
