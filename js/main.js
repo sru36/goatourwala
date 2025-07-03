@@ -8,10 +8,18 @@ AOS.init({
 // Duration Range Slider
 const durationRange = document.getElementById("duration-range");
 const durationValue = document.getElementById("duration-value");
+const mobileDurationRange = document.getElementById("mobile-duration-range");
+const mobileDurationValue = document.getElementById("mobile-duration-value");
 
 if (durationRange && durationValue) {
   durationRange.addEventListener("input", function () {
     durationValue.textContent = this.value;
+  });
+}
+
+if (mobileDurationRange && mobileDurationValue) {
+  mobileDurationRange.addEventListener("input", function () {
+    mobileDurationValue.textContent = this.value;
   });
 }
 
