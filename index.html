@@ -610,48 +610,65 @@
 
       <!-- Trip Planning Form -->
       <div
-        class="absolute bottom-0 right-0 transform translate-y-1/2 hidden xl:block z-30"
-        style="width: 535px; right: -43px"
+        class="absolute top-1/2 right-8 transform -translate-y-1/2 hidden xl:block z-30 w-80"
       >
-        <div class="hero-gradient p-6 xl:p-8 rounded-lg shadow-2xl">
-          <h3
-            class="text-white text-xl xl:text-2xl font-garamond font-bold mb-4 xl:mb-6"
-          >
+        <div class="bg-blue-600 bg-opacity-90 p-6 rounded-t-lg shadow-2xl">
+          <h3 class="text-white text-2xl font-garamond font-bold mb-6">
             Plan Your Goa Trip
           </h3>
 
           <div class="space-y-4">
             <div>
-              <label class="text-white text-sm mb-2 block"
+              <label class="text-white text-sm mb-2 block font-medium"
                 >Duration (Days)</label
               >
-              <input
-                type="range"
-                min="1"
-                max="14"
-                value="7"
-                class="w-full"
-                id="duration-range"
-              />
-              <div class="text-white text-sm mt-1">
+              <div class="relative">
+                <input
+                  type="range"
+                  min="1"
+                  max="14"
+                  value="7"
+                  class="w-full h-2 bg-blue-300 rounded-lg appearance-none cursor-pointer slider"
+                  id="duration-range"
+                />
+                <div class="flex justify-between text-xs text-blue-200 mt-1">
+                  <span>1</span>
+                  <span>14</span>
+                </div>
+              </div>
+              <div class="text-white text-lg font-semibold mt-2">
                 <span id="duration-value">7</span> Days
               </div>
             </div>
 
             <div class="grid grid-cols-2 gap-4">
               <div>
-                <label class="text-white text-sm mb-2 block">Check-in</label>
-                <input type="date" class="w-full p-2 rounded border-none" />
+                <label class="text-white text-sm mb-2 block font-medium"
+                  >Check-in</label
+                >
+                <input
+                  type="date"
+                  class="w-full p-3 rounded border-none text-gray-800 focus:outline-none focus:ring-2 focus:ring-white"
+                />
               </div>
               <div>
-                <label class="text-white text-sm mb-2 block">Check-out</label>
-                <input type="date" class="w-full p-2 rounded border-none" />
+                <label class="text-white text-sm mb-2 block font-medium"
+                  >Check-out</label
+                >
+                <input
+                  type="date"
+                  class="w-full p-3 rounded border-none text-gray-800 focus:outline-none focus:ring-2 focus:ring-white"
+                />
               </div>
             </div>
 
             <div>
-              <label class="text-white text-sm mb-2 block">Guests</label>
-              <select class="w-full p-2 rounded border-none">
+              <label class="text-white text-sm mb-2 block font-medium"
+                >Guests</label
+              >
+              <select
+                class="w-full p-3 rounded border-none text-gray-800 focus:outline-none focus:ring-2 focus:ring-white"
+              >
                 <option>1 Guest</option>
                 <option>2 Guests</option>
                 <option>3-4 Guests</option>
@@ -660,25 +677,27 @@
             </div>
 
             <div>
-              <label class="text-white text-sm mb-2 block">Interests</label>
-              <div class="grid grid-cols-2 gap-2 text-sm">
-                <label class="flex items-center text-white">
-                  <input type="checkbox" class="mr-2" /> Beaches
+              <label class="text-white text-sm mb-2 block font-medium"
+                >Interests</label
+              >
+              <div class="grid grid-cols-2 gap-3 text-sm">
+                <label class="flex items-center text-white cursor-pointer">
+                  <input type="checkbox" class="mr-2 accent-white" /> Beaches
                 </label>
-                <label class="flex items-center text-white">
-                  <input type="checkbox" class="mr-2" /> Nightlife
+                <label class="flex items-center text-white cursor-pointer">
+                  <input type="checkbox" class="mr-2 accent-white" /> Nightlife
                 </label>
-                <label class="flex items-center text-white">
-                  <input type="checkbox" class="mr-2" /> Heritage
+                <label class="flex items-center text-white cursor-pointer">
+                  <input type="checkbox" class="mr-2 accent-white" /> Heritage
                 </label>
-                <label class="flex items-center text-white">
-                  <input type="checkbox" class="mr-2" /> Adventure
+                <label class="flex items-center text-white cursor-pointer">
+                  <input type="checkbox" class="mr-2 accent-white" /> Adventure
                 </label>
               </div>
             </div>
 
             <button
-              class="w-full bg-white text-blue-600 py-3 rounded font-semibold hover:bg-gray-100 transition-colors"
+              class="w-full bg-white text-blue-600 py-3 rounded font-bold hover:bg-gray-100 transition-colors text-lg shadow-lg"
             >
               Search Packages
             </button>
@@ -1194,135 +1213,6 @@
                 >Read More →</a
               >
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Social Feeds -->
-    <section id="social" class="section-spacing">
-      <div class="container mx-auto px-6">
-        <h2
-          class="text-5xl font-garamond font-bold text-center mb-16 text-gray-800 tracking-wider"
-          data-aos="fade-up"
-        >
-          SOCIAL FEEDS
-        </h2>
-
-        <div class="max-w-4xl mx-auto bg-white rounded-lg p-8 shadow-lg">
-          <div class="instagram-grid">
-            <div
-              class="relative group cursor-pointer"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1570126618953-d437176e8c79?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Instagram Post"
-                class="w-full h-48 object-cover rounded-lg"
-              />
-              <div
-                class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg flex items-center justify-center"
-              >
-                <i class="fab fa-instagram text-white text-2xl"></i>
-              </div>
-            </div>
-
-            <div
-              class="relative group cursor-pointer"
-              data-aos="zoom-in"
-              data-aos-delay="200"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Instagram Post"
-                class="w-full h-48 object-cover rounded-lg"
-              />
-              <div
-                class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg flex items-center justify-center"
-              >
-                <i class="fab fa-instagram text-white text-2xl"></i>
-              </div>
-            </div>
-
-            <div
-              class="relative group cursor-pointer"
-              data-aos="zoom-in"
-              data-aos-delay="300"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1515090071442-bc09f94d56bb?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Instagram Post"
-                class="w-full h-48 object-cover rounded-lg"
-              />
-              <div
-                class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg flex items-center justify-center"
-              >
-                <i class="fab fa-instagram text-white text-2xl"></i>
-              </div>
-            </div>
-
-            <div
-              class="relative group cursor-pointer"
-              data-aos="zoom-in"
-              data-aos-delay="400"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Instagram Post"
-                class="w-full h-48 object-cover rounded-lg"
-              />
-              <div
-                class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg flex items-center justify-center"
-              >
-                <i class="fab fa-instagram text-white text-2xl"></i>
-              </div>
-            </div>
-
-            <div
-              class="relative group cursor-pointer"
-              data-aos="zoom-in"
-              data-aos-delay="500"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1566552881013-5e219c3a4c84?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Instagram Post"
-                class="w-full h-48 object-cover rounded-lg"
-              />
-              <div
-                class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg flex items-center justify-center"
-              >
-                <i class="fab fa-instagram text-white text-2xl"></i>
-              </div>
-            </div>
-
-            <div
-              class="relative group cursor-pointer"
-              data-aos="zoom-in"
-              data-aos-delay="600"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1578321272176-b7bbc0679853?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Instagram Post"
-                class="w-full h-48 object-cover rounded-lg"
-              />
-              <div
-                class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg flex items-center justify-center"
-              >
-                <i class="fab fa-instagram text-white text-2xl"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="text-center mt-8">
-            <a
-              href="https://instagram.com/goatourwala"
-              target="_blank"
-              class="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-lg font-semibold hover:from-purple-600 hover:to-pink-600 transition-all"
-            >
-              <i class="fab fa-instagram mr-2"></i>
-              Follow @goatourwala
-            </a>
           </div>
         </div>
       </div>
