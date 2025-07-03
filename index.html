@@ -9,6 +9,29 @@
       content="Experience the best of Goa with Goa Tourwala - beaches, culture, heritage, and adventures await you"
     />
 
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn.builder.io/api/v1/image/assets%2Fe950205e322542039a1d8b11bc8660cc%2Fefc27dca6da5450fa14ce083a825010b?format=webp&width=32"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://cdn.builder.io/api/v1/image/assets%2Fe950205e322542039a1d8b11bc8660cc%2Fefc27dca6da5450fa14ce083a825010b?format=webp&width=180"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://cdn.builder.io/api/v1/image/assets%2Fe950205e322542039a1d8b11bc8660cc%2Fefc27dca6da5450fa14ce083a825010b?format=webp&width=32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://cdn.builder.io/api/v1/image/assets%2Fe950205e322542039a1d8b11bc8660cc%2Fefc27dca6da5450fa14ce083a825010b?format=webp&width=16"
+    />
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -38,15 +61,17 @@
     <!-- Custom Styles -->
     <style>
       :root {
-        --primary-burgundy: rgb(134, 0, 56);
-        --secondary-red: rgb(208, 9, 54);
-        --text-dark: rgb(68, 4, 11);
-        --text-body: rgb(38, 0, 0);
-        --bg-light: rgb(245, 244, 242);
-        --bg-secondary: rgb(246, 244, 241);
-        --bg-accent: rgb(234, 232, 220);
-        --goa-blue: rgb(0, 123, 191);
-        --goa-orange: rgb(255, 140, 0);
+        --primary-blue: rgb(26, 54, 126);
+        --secondary-blue: rgb(59, 130, 246);
+        --primary-red: rgb(196, 25, 47);
+        --secondary-red: rgb(165, 20, 39);
+        --text-dark: rgb(30, 58, 138);
+        --text-body: rgb(15, 23, 42);
+        --bg-light: rgb(248, 250, 252);
+        --bg-secondary: rgb(241, 245, 249);
+        --bg-accent: rgb(226, 232, 240);
+        --goa-blue: rgb(26, 54, 126);
+        --goa-red: rgb(196, 25, 47);
         --goa-green: rgb(46, 125, 50);
       }
 
@@ -64,15 +89,15 @@
         background: linear-gradient(
           174deg,
           var(--goa-blue) 33%,
-          var(--goa-orange) 112%
+          var(--goa-red) 112%
         );
       }
 
       .burgundy-gradient {
         background: linear-gradient(
           174deg,
-          var(--primary-burgundy) 33%,
-          var(--secondary-red) 112%
+          var(--primary-blue) 33%,
+          var(--primary-red) 112%
         );
       }
 
@@ -85,7 +110,35 @@
       }
 
       .swiper-pagination-bullet-active {
-        background: var(--goa-orange) !important;
+        background: var(--goa-red) !important;
+      }
+
+      .navbar-item:hover {
+        color: rgb(196, 25, 47) !important;
+      }
+
+      .dropdown-item:hover {
+        color: rgb(196, 25, 47) !important;
+      }
+
+      .red-hover:hover {
+        color: rgb(196, 25, 47) !important;
+      }
+
+      .bg-custom-red {
+        background-color: rgb(196, 25, 47) !important;
+      }
+
+      .bg-custom-red:hover {
+        background-color: rgb(165, 20, 39) !important;
+      }
+
+      .text-custom-red {
+        color: rgb(196, 25, 47) !important;
+      }
+
+      .border-custom-red {
+        border-color: rgb(196, 25, 47) !important;
       }
 
       .whatsapp-float {
@@ -136,7 +189,7 @@
 
       .nav-tab.active {
         background: rgba(255, 255, 255, 0.9);
-        border-top-color: var(--goa-orange);
+        border-top-color: var(--goa-red);
       }
 
       .card-hover {
@@ -275,10 +328,10 @@
               <!-- Experiences Dropdown -->
               <div class="relative group">
                 <button
-                  class="text-white hover:text-orange-300 transition-colors flex items-center"
+                  class="text-white navbar-item transition-colors flex items-center text-lg font-semibold"
                 >
                   EXPERIENCES
-                  <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                  <i class="fas fa-chevron-down ml-1 text-sm"></i>
                 </button>
                 <div
                   class="absolute top-full left-0 bg-white shadow-2xl rounded-lg p-12 mt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-screen max-w-7xl transform -translate-x-1/2"
@@ -288,50 +341,50 @@
                     <!-- Cruise in goa -->
                     <div>
                       <h3
-                        class="font-bold text-blue-600 mb-4 border-b border-gray-200 pb-3 text-lg"
+                        class="font-bold text-red-700 mb-4 border-b border-gray-200 pb-3 text-xl"
                       >
                         Cruise in goa
                       </h3>
-                      <ul class="space-y-3 text-base">
+                      <ul class="space-y-3 text-lg">
                         <li>
                           <a
                             href="adventure-cruise.html"
-                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            class="text-gray-600 hover:text-red-700 transition-colors"
                             >Adventure cruise</a
                           >
                         </li>
                         <li>
                           <a
                             href="adventure-cruise-watersport.html"
-                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            class="text-gray-600 hover:text-red-700 transition-colors"
                             >Adventure cruise With Watersport</a
                           >
                         </li>
                         <li>
                           <a
                             href="dinner-cruise.html"
-                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            class="text-gray-600 hover:text-red-700 transition-colors"
                             >Dinner cruise</a
                           >
                         </li>
                         <li>
                           <a
                             href="sunset-cruise.html"
-                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            class="text-gray-600 hover:text-red-700 transition-colors"
                             >Sunset Cruise</a
                           >
                         </li>
                         <li>
                           <a
                             href="yacht-rent.html"
-                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            class="text-gray-600 hover:text-red-700 transition-colors"
                             >Yacht on rent</a
                           >
                         </li>
                         <li>
                           <a
                             href="cruise-rent.html"
-                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            class="text-gray-600 hover:text-red-700 transition-colors"
                             >Cruise on rent</a
                           >
                         </li>
@@ -341,29 +394,29 @@
                     <!-- Sightseen -->
                     <div>
                       <h3
-                        class="font-bold text-blue-600 mb-4 border-b border-gray-200 pb-3 text-lg"
+                        class="font-bold text-red-700 mb-4 border-b border-gray-200 pb-3 text-xl"
                       >
                         Sightseen
                       </h3>
-                      <ul class="space-y-3 text-base">
+                      <ul class="space-y-3 text-lg">
                         <li>
                           <a
                             href="north-goa-sightseen.html"
-                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            class="text-gray-600 hover:text-red-700 transition-colors"
                             >North goa sightseen</a
                           >
                         </li>
                         <li>
                           <a
                             href="south-goa-sightseen.html"
-                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            class="text-gray-600 hover:text-red-700 transition-colors"
                             >South goa sightseen</a
                           >
                         </li>
                         <li>
                           <a
                             href="dolphin-sightseen-tour.html"
-                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            class="text-gray-600 hover:text-red-700 transition-colors"
                             >Dolphin sightseen tour</a
                           >
                         </li>
@@ -373,50 +426,50 @@
                     <!-- Adventure Sports -->
                     <div>
                       <h3
-                        class="font-bold text-blue-600 mb-4 border-b border-gray-200 pb-3 text-lg"
+                        class="font-bold text-red-700 mb-4 border-b border-gray-200 pb-3 text-xl"
                       >
                         Adventure Sports
                       </h3>
-                      <ul class="space-y-3 text-base">
+                      <ul class="space-y-3 text-lg">
                         <li>
                           <a
                             href="scuba-diving.html"
-                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            class="text-gray-600 hover:text-red-700 transition-colors"
                             >Scuba Diving</a
                           >
                         </li>
                         <li>
                           <a
                             href="watersports.html"
-                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            class="text-gray-600 hover:text-red-700 transition-colors"
                             >Watersports</a
                           >
                         </li>
                         <li>
                           <a
                             href="flyboarding.html"
-                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            class="text-gray-600 hover:text-red-700 transition-colors"
                             >Flyboarding</a
                           >
                         </li>
                         <li>
                           <a
                             href="bungee-jumping.html"
-                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            class="text-gray-600 hover:text-red-700 transition-colors"
                             >Bungee jumping</a
                           >
                         </li>
                         <li>
                           <a
                             href="dudhsagar-waterfall-tour.html"
-                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            class="text-gray-600 hover:text-red-700 transition-colors"
                             >Dudhsagar waterfall tour</a
                           >
                         </li>
                         <li>
                           <a
                             href="crocodile-trip-goa.html"
-                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            class="text-gray-600 hover:text-red-700 transition-colors"
                             >Crocodile Trip In Goa</a
                           >
                         </li>
@@ -426,22 +479,22 @@
                     <!-- Scuba With WaterSports -->
                     <div>
                       <h3
-                        class="font-bold text-blue-600 mb-4 border-b border-gray-200 pb-3 text-lg"
+                        class="font-bold text-red-700 mb-4 border-b border-gray-200 pb-3 text-xl"
                       >
                         Scuba With WaterSports
                       </h3>
-                      <ul class="space-y-3 text-base">
+                      <ul class="space-y-3 text-lg">
                         <li>
                           <a
                             href="scuba-combo-grand-island.html"
-                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            class="text-gray-600 hover:text-red-700 transition-colors"
                             >Scuba Combo Tour At Grand Island</a
                           >
                         </li>
                         <li>
                           <a
                             href="scuba-watersports-malvan.html"
-                            class="text-gray-600 hover:text-blue-600 transition-colors"
+                            class="text-gray-600 hover:text-red-700 transition-colors"
                             >Scuba with Watersports At malvan</a
                           >
                         </li>
@@ -454,75 +507,75 @@
               <!-- Tour Packages Dropdown -->
               <div class="relative group">
                 <button
-                  class="text-white hover:text-orange-300 transition-colors flex items-center"
+                  class="text-white navbar-item transition-colors flex items-center text-lg font-semibold"
                 >
                   TOUR PACKAGES
-                  <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                  <i class="fas fa-chevron-down ml-1 text-sm"></i>
                 </button>
                 <div
                   class="absolute top-full left-0 bg-white shadow-2xl rounded-lg p-8 mt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-96 transform -translate-x-1/4"
                 >
-                  <ul class="space-y-4 text-base">
+                  <ul class="space-y-4 text-lg">
                     <li>
                       <a
                         href="#"
-                        class="text-gray-600 hover:text-blue-600 transition-colors block py-1"
+                        class="text-gray-600 hover:text-red-700 transition-colors block py-1"
                         >Goa honeymoon package</a
                       >
                     </li>
                     <li>
                       <a
                         href="#"
-                        class="text-gray-600 hover:text-blue-600 transition-colors block py-1"
+                        class="text-gray-600 hover:text-red-700 transition-colors block py-1"
                         >Goa tour Packages</a
                       >
                     </li>
                     <li>
                       <a
                         href="#"
-                        class="text-gray-600 hover:text-blue-600 transition-colors block py-1"
+                        class="text-gray-600 hover:text-red-700 transition-colors block py-1"
                         >Business tour package</a
                       >
                     </li>
                     <li>
                       <a
                         href="#"
-                        class="text-gray-600 hover:text-blue-600 transition-colors block py-1"
+                        class="text-gray-600 hover:text-red-700 transition-colors block py-1"
                         >Family tour package</a
                       >
                     </li>
                     <li>
                       <a
                         href="#"
-                        class="text-gray-600 hover:text-blue-600 transition-colors block py-1"
+                        class="text-gray-600 hover:text-red-700 transition-colors block py-1"
                         >Adventure tour package</a
                       >
                     </li>
                     <li>
                       <a
                         href="#"
-                        class="text-gray-600 hover:text-blue-600 transition-colors block py-1"
+                        class="text-gray-600 hover:text-red-700 transition-colors block py-1"
                         >GOA Hampi Tour</a
                       >
                     </li>
                     <li>
                       <a
                         href="#"
-                        class="text-gray-600 hover:text-blue-600 transition-colors block py-1"
+                        class="text-gray-600 hover:text-red-700 transition-colors block py-1"
                         >Goa murudeshwar</a
                       >
                     </li>
                     <li>
                       <a
                         href="#"
-                        class="text-gray-600 hover:text-blue-600 transition-colors block py-1"
+                        class="text-gray-600 hover:text-red-700 transition-colors block py-1"
                         >Wildernest nature trip</a
                       >
                     </li>
                     <li>
                       <a
                         href="#"
-                        class="text-gray-600 hover:text-blue-600 transition-colors block py-1"
+                        class="text-gray-600 hover:text-red-700 transition-colors block py-1"
                         >Houseboat</a
                       >
                     </li>
@@ -533,47 +586,47 @@
               <!-- Plan Your Trip Dropdown -->
               <div class="relative group">
                 <button
-                  class="text-white hover:text-orange-300 transition-colors flex items-center"
+                  class="text-white navbar-item transition-colors flex items-center text-lg font-semibold"
                 >
                   PLAN YOUR TRIP
-                  <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                  <i class="fas fa-chevron-down ml-1 text-sm"></i>
                 </button>
                 <div
                   class="absolute top-full left-0 bg-white shadow-2xl rounded-lg p-8 mt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-96 transform -translate-x-1/4"
                 >
-                  <ul class="space-y-4 text-base">
+                  <ul class="space-y-4 text-lg">
                     <li>
                       <a
                         href="#"
-                        class="text-gray-600 hover:text-blue-600 transition-colors block py-1"
+                        class="text-gray-600 hover:text-red-700 transition-colors block py-1"
                         >Accommodations - Hotels</a
                       >
                     </li>
                     <li>
                       <a
                         href="#"
-                        class="text-gray-600 hover:text-blue-600 transition-colors block py-1"
+                        class="text-gray-600 hover:text-red-700 transition-colors block py-1"
                         >Accommodations - Homestays</a
                       >
                     </li>
                     <li>
                       <a
                         href="#"
-                        class="text-gray-600 hover:text-blue-600 transition-colors block py-1"
+                        class="text-gray-600 hover:text-red-700 transition-colors block py-1"
                         >Itineraries</a
                       >
                     </li>
                     <li>
                       <a
                         href="#"
-                        class="text-gray-600 hover:text-blue-600 transition-colors block py-1"
+                        class="text-gray-600 hover:text-red-700 transition-colors block py-1"
                         >Tourist Guides</a
                       >
                     </li>
                     <li>
                       <a
                         href="#"
-                        class="text-gray-600 hover:text-blue-600 transition-colors block py-1"
+                        class="text-gray-600 hover:text-red-700 transition-colors block py-1"
                         >Travel Agents</a
                       >
                     </li>
@@ -582,7 +635,7 @@
               </div>
 
               <div
-                class="text-white hover:text-orange-300 transition-colors cursor-pointer"
+                class="text-white navbar-item transition-colors cursor-pointer text-lg font-semibold"
               >
                 <i class="fas fa-search"></i> SEARCH
               </div>
@@ -611,7 +664,7 @@
             adventures
           </p>
           <button
-            class="bg-orange-500 hover:bg-orange-600 text-white px-6 md:px-8 py-2 md:py-3 rounded-lg font-semibold transition-colors text-base md:text-lg"
+            class="bg-custom-red text-white px-6 md:px-8 py-2 md:py-3 rounded-lg font-semibold transition-colors text-base md:text-lg"
           >
             Start Your Journey
           </button>
@@ -658,7 +711,7 @@
 
       <!-- Trip Planning Form -->
       <div class="absolute bottom-8 right-8 hidden xl:block z-30 w-80">
-        <div class="bg-orange-500 bg-opacity-95 p-6 rounded-lg shadow-2xl">
+        <div class="bg-custom-red bg-opacity-95 p-6 rounded-lg shadow-2xl">
           <h3 class="text-white text-2xl font-garamond font-bold mb-6">
             Plan Your Goa Trip
           </h3>
@@ -754,7 +807,14 @@
 
     <!-- Mobile Trip Planning Section -->
     <section
-      class="xl:hidden bg-gradient-to-r from-blue-600 to-orange-500 py-8"
+      class="xl:hidden py-8"
+      style="
+        background: linear-gradient(
+          to right,
+          rgb(37, 99, 235),
+          rgb(196, 25, 47)
+        );
+      "
     >
       <div class="container mx-auto px-6">
         <div class="bg-white rounded-lg p-6 shadow-lg">
@@ -838,7 +898,16 @@
             </div>
 
             <button
-              class="w-full bg-gradient-to-r from-blue-600 to-orange-500 text-white py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-orange-600 transition-all"
+              class="w-full text-white py-3 rounded-lg font-semibold transition-all"
+              style="
+                background: linear-gradient(
+                  to right,
+                  rgb(37, 99, 235),
+                  rgb(196, 25, 47)
+                );
+              "
+              onmouseover="this.style.background='linear-gradient(to right, rgb(29, 78, 216), rgb(165, 20, 39))'"
+              onmouseout="this.style.background='linear-gradient(to right, rgb(37, 99, 235), rgb(196, 25, 47))'"
             >
               Search Packages
             </button>
@@ -871,7 +940,7 @@
               beach club access.
             </p>
             <button
-              class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+              class="bg-custom-red text-white px-6 py-3 rounded-lg font-semibold transition-colors"
             >
               Explore Services
             </button>
@@ -918,134 +987,8 @@
                 <p class="text-sm text-gray-600">UNESCO Sites</p>
               </div>
               <div class="text-center p-4 bg-white rounded-lg shadow">
-                <h4 class="font-bold text-orange-500">50+</h4>
+                <h4 class="font-bold text-custom-red">50+</h4>
                 <p class="text-sm text-gray-600">Beaches</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Videos Section -->
-    <section id="videos" class="section-spacing">
-      <div class="container mx-auto px-6">
-        <h2
-          class="text-5xl font-garamond font-bold text-center mb-16 text-gray-800 tracking-wider"
-          data-aos="fade-up"
-        >
-          VIDEOS
-        </h2>
-
-        <div class="max-w-6xl mx-auto">
-          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <!-- Main Video -->
-            <div class="lg:col-span-2">
-              <div
-                class="relative bg-black rounded-lg overflow-hidden h-96"
-                data-aos="fade-right"
-              >
-                <video
-                  class="w-full h-full object-cover"
-                  poster="https://images.unsplash.com/photo-1571619489510-9f7c2432d2b6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                >
-                  <source src="adventure.mp4" type="video/mp4" />
-                </video>
-                <div class="play-button" onclick="playVideo(this)">
-                  <i class="fas fa-play"></i>
-                </div>
-                <div class="absolute bottom-4 left-4 text-white">
-                  <h3 class="font-bold text-lg">Adventure in Goa</h3>
-                  <p class="text-sm opacity-80">
-                    Thrilling water sports and activities
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Video Playlist -->
-            <div class="space-y-4" data-aos="fade-left">
-              <div
-                class="bg-white rounded-lg p-4 shadow-lg cursor-pointer hover:shadow-xl transition-shadow"
-              >
-                <div class="flex gap-3">
-                  <div
-                    class="relative w-24 h-16 bg-black rounded overflow-hidden flex-shrink-0"
-                  >
-                    <video class="w-full h-full object-cover">
-                      <source src="cruise.mp4" type="video/mp4" />
-                    </video>
-                    <div
-                      class="absolute inset-0 flex items-center justify-center"
-                    >
-                      <i class="fas fa-play text-white text-xs"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <h4 class="font-semibold text-sm text-gray-800">
-                      Goa River Cruise
-                    </h4>
-                    <p class="text-xs text-gray-600">
-                      Sunset cruise along Mandovi River
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="bg-white rounded-lg p-4 shadow-lg cursor-pointer hover:shadow-xl transition-shadow"
-              >
-                <div class="flex gap-3">
-                  <div
-                    class="relative w-24 h-16 bg-black rounded overflow-hidden flex-shrink-0"
-                  >
-                    <video class="w-full h-full object-cover">
-                      <source src="culture.mp4" type="video/mp4" />
-                    </video>
-                    <div
-                      class="absolute inset-0 flex items-center justify-center"
-                    >
-                      <i class="fas fa-play text-white text-xs"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <h4 class="font-semibold text-sm text-gray-800">
-                      Goan Culture
-                    </h4>
-                    <p class="text-xs text-gray-600">
-                      Traditional festivals and music
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="bg-white rounded-lg p-4 shadow-lg cursor-pointer hover:shadow-xl transition-shadow"
-              >
-                <div class="flex gap-3">
-                  <div
-                    class="relative w-24 h-16 bg-gray-300 rounded overflow-hidden flex-shrink-0"
-                  >
-                    <img
-                      src="https://images.unsplash.com/photo-1544829047-b0c8c9d30bf2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                      alt="Beach"
-                      class="w-full h-full object-cover"
-                    />
-                    <div
-                      class="absolute inset-0 flex items-center justify-center"
-                    >
-                      <i class="fas fa-play text-white text-xs"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <h4 class="font-semibold text-sm text-gray-800">
-                      Beach Paradise
-                    </h4>
-                    <p class="text-xs text-gray-600">
-                      Explore pristine beaches of Goa
-                    </p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -1090,7 +1033,7 @@
                       >Water Sports</span
                     >
                     <span
-                      class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm"
+                      class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm"
                       >Sunsets</span
                     >
                   </div>
@@ -1168,96 +1111,103 @@
       </div>
     </section>
 
-    <!-- Our Stories Section -->
+    <!-- Experience Categories Grid -->
     <section
-      id="stories"
+      id="experience-grid"
       class="py-20"
       style="background-color: rgb(241, 238, 233)"
     >
       <div class="container mx-auto px-6">
-        <h2
-          class="text-5xl font-garamond font-bold text-center mb-16 text-gray-800 tracking-wider"
-          data-aos="fade-up"
-        >
-          OUR STORIES
-        </h2>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-12 grid-rows-6 gap-4 h-screen max-h-[800px]">
+          <!-- Cruise - Large card (spans 6 columns, 4 rows) -->
           <div
-            class="bg-white rounded-lg overflow-hidden shadow-lg card-hover"
+            class="col-span-6 row-span-4 relative overflow-hidden group cursor-pointer"
             data-aos="fade-up"
             data-aos-delay="100"
           >
             <img
-              src="https://images.unsplash.com/photo-1566552881013-5e219c3a4c84?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-              alt="Story 1"
-              class="w-full h-48 object-cover"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fe950205e322542039a1d8b11bc8660cc%2Ff6c251b0073943848fa82f12bfc7f7b3?format=webp&width=800"
+              alt="Cruise in Goa"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
             />
-            <div class="p-6">
-              <h3 class="text-xl font-garamond font-bold mb-3 text-gray-800">
-                Hidden Gems of South Goa
-              </h3>
-              <p class="text-gray-600 text-sm leading-relaxed mb-4">
-                Discover the serene beaches and traditional villages that
-                showcase the authentic charm of Goa away from the crowds.
-              </p>
-              <a
-                href="#"
-                class="text-blue-600 font-semibold text-sm hover:text-blue-800 transition-colors"
-                >Read More →</a
+            <div
+              class="absolute inset-0 bg-black bg-opacity-40 transition-opacity duration-300 group-hover:bg-opacity-30"
+            ></div>
+            <div class="absolute bottom-6 left-6">
+              <h3
+                class="text-white text-3xl font-garamond font-bold tracking-wide"
               >
+                CRUISE
+              </h3>
             </div>
           </div>
 
+          <!-- Sightseen - Medium card (spans 6 columns, 2 rows) -->
           <div
-            class="bg-white rounded-lg overflow-hidden shadow-lg card-hover"
+            class="col-span-6 row-span-2 relative overflow-hidden group cursor-pointer"
             data-aos="fade-up"
             data-aos-delay="200"
           >
             <img
-              src="https://images.unsplash.com/photo-1578321272176-b7bbc0679853?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-              alt="Story 2"
-              class="w-full h-48 object-cover"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fe950205e322542039a1d8b11bc8660cc%2Ff85b617169e54e2da46dca8ba1765138?format=webp&width=800"
+              alt="Sightseen in Goa"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
             />
-            <div class="p-6">
-              <h3 class="text-xl font-garamond font-bold mb-3 text-gray-800">
-                Festivals of Goa
-              </h3>
-              <p class="text-gray-600 text-sm leading-relaxed mb-4">
-                Experience the vibrant carnival celebrations and traditional
-                festivals that bring Goa's cultural heritage to life.
-              </p>
-              <a
-                href="#"
-                class="text-blue-600 font-semibold text-sm hover:text-blue-800 transition-colors"
-                >Read More →</a
+            <div
+              class="absolute inset-0 bg-black bg-opacity-40 transition-opacity duration-300 group-hover:bg-opacity-30"
+            ></div>
+            <div class="absolute bottom-4 left-4">
+              <h3
+                class="text-white text-2xl font-garamond font-bold tracking-wide"
               >
+                SIGHTSEEN
+              </h3>
             </div>
           </div>
 
+          <!-- Adventure Sports - Medium card (spans 6 columns, 3 rows) -->
           <div
-            class="bg-white rounded-lg overflow-hidden shadow-lg card-hover"
+            class="col-span-6 row-span-3 relative overflow-hidden group cursor-pointer"
             data-aos="fade-up"
             data-aos-delay="300"
           >
             <img
-              src="https://images.unsplash.com/photo-1539650116574-75c0c6d31f32?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-              alt="Story 3"
-              class="w-full h-48 object-cover"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fe950205e322542039a1d8b11bc8660cc%2Fe2337979ae87496488708c72e9dda29f?format=webp&width=800"
+              alt="Adventure Sports in Goa"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
             />
-            <div class="p-6">
-              <h3 class="text-xl font-garamond font-bold mb-3 text-gray-800">
-                Goan Architecture
-              </h3>
-              <p class="text-gray-600 text-sm leading-relaxed mb-4">
-                Explore the unique blend of Portuguese and Indian architectural
-                styles that define Goa's historical landscape.
-              </p>
-              <a
-                href="#"
-                class="text-blue-600 font-semibold text-sm hover:text-blue-800 transition-colors"
-                >Read More →</a
+            <div
+              class="absolute inset-0 bg-black bg-opacity-40 transition-opacity duration-300 group-hover:bg-opacity-30"
+            ></div>
+            <div class="absolute bottom-6 left-6">
+              <h3
+                class="text-white text-2xl font-garamond font-bold tracking-wide"
               >
+                ADVENTURE SPORTS
+              </h3>
+            </div>
+          </div>
+
+          <!-- Scuba Diving - Medium card (spans 6 columns, 3 rows) -->
+          <div
+            class="col-span-6 row-span-3 relative overflow-hidden group cursor-pointer"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Fe950205e322542039a1d8b11bc8660cc%2F733a9479ad1d49a78ad900aba1d90030?format=webp&width=800"
+              alt="Scuba Diving in Goa"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-40 transition-opacity duration-300 group-hover:bg-opacity-30"
+            ></div>
+            <div class="absolute bottom-6 left-6">
+              <h3
+                class="text-white text-2xl font-garamond font-bold tracking-wide"
+              >
+                SCUBA DIVING
+              </h3>
             </div>
           </div>
         </div>
@@ -1288,7 +1238,7 @@
                 class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div
-                class="absolute top-3 left-3 bg-orange-500 text-white px-2 py-1 rounded text-xs font-semibold"
+                class="absolute top-3 left-3 bg-red-500 text-white px-2 py-1 rounded text-xs font-semibold"
               >
                 Featured
               </div>
@@ -1480,8 +1430,18 @@
     </section>
 
     <!-- Footer -->
-    <footer class="relative py-12 bg-gray-900">
-      <div class="container mx-auto px-6">
+    <footer
+      class="relative py-12"
+      style="
+        background-image: url(&quot;https://cdn.builder.io/api/v1/image/assets%2Fe950205e322542039a1d8b11bc8660cc%2F6fbf4f40c7604d7584f1b3de267722c0?format=webp&width=800&quot;);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      "
+    >
+      <!-- Semi-transparent overlay -->
+      <div class="absolute inset-0 bg-gray-900 bg-opacity-75"></div>
+      <div class="container mx-auto px-6 relative z-10">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-white">
           <!-- Need My Travel Help Section -->
           <div>
@@ -1492,7 +1452,7 @@
               Got Questions ? Call us 24/7!
             </p>
             <div class="mb-4">
-              <div class="text-orange-500 font-semibold">Call Us:</div>
+              <div class="text-red-500 font-semibold">Call Us:</div>
               <div class="text-blue-400">+91 9959732703</div>
               <div class="text-blue-400">+91 7704715979</div>
               <div class="text-blue-400">sushil@goatourwala.in</div>
@@ -1543,42 +1503,42 @@
               <li>
                 <a
                   href="#"
-                  class="text-gray-300 hover:text-orange-400 transition-colors"
+                  class="text-gray-300 hover:text-red-400 transition-colors"
                   >Home</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="text-gray-300 hover:text-orange-400 transition-colors"
+                  class="text-gray-300 hover:text-red-400 transition-colors"
                   >Contact Us</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="text-gray-300 hover:text-orange-400 transition-colors"
+                  class="text-gray-300 hover:text-red-400 transition-colors"
                   >Goa Tour Packages</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="text-gray-300 hover:text-orange-400 transition-colors"
+                  class="text-gray-300 hover:text-red-400 transition-colors"
                   >Tourist Spots In Goa</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="text-gray-300 hover:text-orange-400 transition-colors"
+                  class="text-gray-300 hover:text-red-400 transition-colors"
                   >Honeymoon Packages</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="text-gray-300 hover:text-orange-400 transition-colors"
+                  class="text-gray-300 hover:text-red-400 transition-colors"
                   >Adventure Cruise In Goa</a
                 >
               </li>
@@ -1592,35 +1552,35 @@
               <li>
                 <a
                   href="#"
-                  class="text-gray-300 hover:text-orange-400 transition-colors"
+                  class="text-gray-300 hover:text-red-400 transition-colors"
                   >About Us</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="text-gray-300 hover:text-orange-400 transition-colors"
+                  class="text-gray-300 hover:text-red-400 transition-colors"
                   >Terms Of Use</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="text-gray-300 hover:text-orange-400 transition-colors"
+                  class="text-gray-300 hover:text-red-400 transition-colors"
                   >Privacy Statement</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="text-gray-300 hover:text-orange-400 transition-colors"
+                  class="text-gray-300 hover:text-red-400 transition-colors"
                   >Paragliding In Candolim Beach</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="text-gray-300 hover:text-orange-400 transition-colors"
+                  class="text-gray-300 hover:text-red-400 transition-colors"
                   >Budget - Friendly Goa Tours</a
                 >
               </li>
@@ -1640,22 +1600,22 @@
                 <input
                   type="text"
                   placeholder="Name"
-                  class="w-full p-2 bg-gray-800 border border-gray-700 rounded text-white placeholder-gray-400 focus:border-orange-500 focus:outline-none"
+                  class="w-full p-2 bg-gray-800 border border-gray-700 rounded text-white placeholder-gray-400 focus:border-red-500 focus:outline-none"
                 />
                 <input
                   type="email"
                   placeholder="Email Id"
-                  class="w-full p-2 bg-gray-800 border border-gray-700 rounded text-white placeholder-gray-400 focus:border-orange-500 focus:outline-none"
+                  class="w-full p-2 bg-gray-800 border border-gray-700 rounded text-white placeholder-gray-400 focus:border-red-500 focus:outline-none"
                 />
                 <input
                   type="tel"
                   placeholder="Phone No."
-                  class="w-full p-2 bg-gray-800 border border-gray-700 rounded text-white placeholder-gray-400 focus:border-orange-500 focus:outline-none"
+                  class="w-full p-2 bg-gray-800 border border-gray-700 rounded text-white placeholder-gray-400 focus:border-red-500 focus:outline-none"
                 />
                 <textarea
                   placeholder="Message"
                   rows="3"
-                  class="w-full p-2 bg-gray-800 border border-gray-700 rounded text-white placeholder-gray-400 focus:border-orange-500 focus:outline-none resize-none"
+                  class="w-full p-2 bg-gray-800 border border-gray-700 rounded text-white placeholder-gray-400 focus:border-red-500 focus:outline-none resize-none"
                 ></textarea>
                 <button
                   class="w-full bg-green-600 text-white py-2 rounded font-semibold hover:bg-green-700 transition-colors"

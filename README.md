@@ -15,7 +15,7 @@ A complete, high-fidelity tourism website inspired by MP Tourism, specially desi
 
 ## Design Elements
 
-- **Color Scheme**: Goa-inspired blues, oranges, and greens
+- **Color Scheme**: Modern blues, reds, and greens
 - **Typography**: EB Garamond for headings, Alegreya Sans for body text
 - **Layout**: Mirrors MP Tourism's professional structure
 - **Components**: Modular, reusable design components
