@@ -898,7 +898,16 @@
             </div>
 
             <button
-              class="w-full bg-gradient-to-r from-blue-600 to-red-500 text-white py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-red-600 transition-all"
+              class="w-full text-white py-3 rounded-lg font-semibold transition-all"
+              style="
+                background: linear-gradient(
+                  to right,
+                  rgb(37, 99, 235),
+                  rgb(196, 25, 47)
+                );
+              "
+              onmouseover="this.style.background='linear-gradient(to right, rgb(29, 78, 216), rgb(165, 20, 39))'"
+              onmouseout="this.style.background='linear-gradient(to right, rgb(37, 99, 235), rgb(196, 25, 47))'"
             >
               Search Packages
             </button>
