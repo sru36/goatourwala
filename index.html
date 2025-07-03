@@ -1111,96 +1111,103 @@
       </div>
     </section>
 
-    <!-- Our Stories Section -->
+    <!-- Experience Categories Grid -->
     <section
-      id="stories"
+      id="experience-grid"
       class="py-20"
       style="background-color: rgb(241, 238, 233)"
     >
       <div class="container mx-auto px-6">
-        <h2
-          class="text-5xl font-garamond font-bold text-center mb-16 text-gray-800 tracking-wider"
-          data-aos="fade-up"
-        >
-          OUR STORIES
-        </h2>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-12 grid-rows-6 gap-4 h-screen max-h-[800px]">
+          <!-- Cruise - Large card (spans 6 columns, 4 rows) -->
           <div
-            class="bg-white rounded-lg overflow-hidden shadow-lg card-hover"
+            class="col-span-6 row-span-4 relative overflow-hidden group cursor-pointer"
             data-aos="fade-up"
             data-aos-delay="100"
           >
             <img
-              src="https://images.unsplash.com/photo-1566552881013-5e219c3a4c84?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-              alt="Story 1"
-              class="w-full h-48 object-cover"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fe950205e322542039a1d8b11bc8660cc%2Ff6c251b0073943848fa82f12bfc7f7b3?format=webp&width=800"
+              alt="Cruise in Goa"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
             />
-            <div class="p-6">
-              <h3 class="text-xl font-garamond font-bold mb-3 text-gray-800">
-                Hidden Gems of South Goa
-              </h3>
-              <p class="text-gray-600 text-sm leading-relaxed mb-4">
-                Discover the serene beaches and traditional villages that
-                showcase the authentic charm of Goa away from the crowds.
-              </p>
-              <a
-                href="#"
-                class="text-blue-600 font-semibold text-sm hover:text-blue-800 transition-colors"
-                >Read More →</a
+            <div
+              class="absolute inset-0 bg-black bg-opacity-40 transition-opacity duration-300 group-hover:bg-opacity-30"
+            ></div>
+            <div class="absolute bottom-6 left-6">
+              <h3
+                class="text-white text-3xl font-garamond font-bold tracking-wide"
               >
+                CRUISE
+              </h3>
             </div>
           </div>
 
+          <!-- Sightseen - Medium card (spans 6 columns, 2 rows) -->
           <div
-            class="bg-white rounded-lg overflow-hidden shadow-lg card-hover"
+            class="col-span-6 row-span-2 relative overflow-hidden group cursor-pointer"
             data-aos="fade-up"
             data-aos-delay="200"
           >
             <img
-              src="https://images.unsplash.com/photo-1578321272176-b7bbc0679853?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-              alt="Story 2"
-              class="w-full h-48 object-cover"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fe950205e322542039a1d8b11bc8660cc%2Ff85b617169e54e2da46dca8ba1765138?format=webp&width=800"
+              alt="Sightseen in Goa"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
             />
-            <div class="p-6">
-              <h3 class="text-xl font-garamond font-bold mb-3 text-gray-800">
-                Festivals of Goa
-              </h3>
-              <p class="text-gray-600 text-sm leading-relaxed mb-4">
-                Experience the vibrant carnival celebrations and traditional
-                festivals that bring Goa's cultural heritage to life.
-              </p>
-              <a
-                href="#"
-                class="text-blue-600 font-semibold text-sm hover:text-blue-800 transition-colors"
-                >Read More →</a
+            <div
+              class="absolute inset-0 bg-black bg-opacity-40 transition-opacity duration-300 group-hover:bg-opacity-30"
+            ></div>
+            <div class="absolute bottom-4 left-4">
+              <h3
+                class="text-white text-2xl font-garamond font-bold tracking-wide"
               >
+                SIGHTSEEN
+              </h3>
             </div>
           </div>
 
+          <!-- Adventure Sports - Medium card (spans 6 columns, 3 rows) -->
           <div
-            class="bg-white rounded-lg overflow-hidden shadow-lg card-hover"
+            class="col-span-6 row-span-3 relative overflow-hidden group cursor-pointer"
             data-aos="fade-up"
             data-aos-delay="300"
           >
             <img
-              src="https://images.unsplash.com/photo-1539650116574-75c0c6d31f32?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-              alt="Story 3"
-              class="w-full h-48 object-cover"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fe950205e322542039a1d8b11bc8660cc%2Fe2337979ae87496488708c72e9dda29f?format=webp&width=800"
+              alt="Adventure Sports in Goa"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
             />
-            <div class="p-6">
-              <h3 class="text-xl font-garamond font-bold mb-3 text-gray-800">
-                Goan Architecture
-              </h3>
-              <p class="text-gray-600 text-sm leading-relaxed mb-4">
-                Explore the unique blend of Portuguese and Indian architectural
-                styles that define Goa's historical landscape.
-              </p>
-              <a
-                href="#"
-                class="text-blue-600 font-semibold text-sm hover:text-blue-800 transition-colors"
-                >Read More →</a
+            <div
+              class="absolute inset-0 bg-black bg-opacity-40 transition-opacity duration-300 group-hover:bg-opacity-30"
+            ></div>
+            <div class="absolute bottom-6 left-6">
+              <h3
+                class="text-white text-2xl font-garamond font-bold tracking-wide"
               >
+                ADVENTURE SPORTS
+              </h3>
+            </div>
+          </div>
+
+          <!-- Scuba Diving - Medium card (spans 6 columns, 3 rows) -->
+          <div
+            class="col-span-6 row-span-3 relative overflow-hidden group cursor-pointer"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Fe950205e322542039a1d8b11bc8660cc%2F733a9479ad1d49a78ad900aba1d90030?format=webp&width=800"
+              alt="Scuba Diving in Goa"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-40 transition-opacity duration-300 group-hover:bg-opacity-30"
+            ></div>
+            <div class="absolute bottom-6 left-6">
+              <h3
+                class="text-white text-2xl font-garamond font-bold tracking-wide"
+              >
+                SCUBA DIVING
+              </h3>
             </div>
           </div>
         </div>
