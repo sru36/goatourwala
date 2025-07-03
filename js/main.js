@@ -74,14 +74,20 @@ if (mobileMenuBtn) {
       const mobileMenuDiv = document.createElement("div");
       mobileMenuDiv.id = "mobile-menu";
       mobileMenuDiv.className =
-        "md:hidden bg-black bg-opacity-90 absolute top-full left-0 w-full py-4 hidden";
+        "lg:hidden bg-black bg-opacity-95 absolute top-full left-0 w-full py-6 hidden";
       mobileMenuDiv.innerHTML = `
                 <div class="flex flex-col space-y-4 px-6">
-                    <a href="#destinations" class="text-white hover:text-orange-300 transition-colors">Destinations</a>
-                    <a href="#experiences" class="text-white hover:text-orange-300 transition-colors">Experiences</a>
-                    <a href="#packages" class="text-white hover:text-orange-300 transition-colors">Packages</a>
-                    <a href="#culture" class="text-white hover:text-orange-300 transition-colors">Culture</a>
-                    <a href="#contact" class="text-white hover:text-orange-300 transition-colors">Contact</a>
+                    <div class="text-white font-semibold border-b border-gray-600 pb-2">EXPERIENCES</div>
+                    <a href="#nature" class="text-gray-300 hover:text-orange-300 transition-colors pl-4">Nature</a>
+                    <a href="#heritage" class="text-gray-300 hover:text-orange-300 transition-colors pl-4">Heritage</a>
+                    <a href="#wildlife" class="text-gray-300 hover:text-orange-300 transition-colors pl-4">Wildlife</a>
+                    <a href="#spirituality" class="text-gray-300 hover:text-orange-300 transition-colors pl-4">Spirituality</a>
+                    <a href="#plan-trip" class="text-white hover:text-orange-300 transition-colors font-semibold">PLAN YOUR TRIP</a>
+                    <a href="#blogs" class="text-white hover:text-orange-300 transition-colors font-semibold">BLOGS</a>
+                    <div class="text-white hover:text-orange-300 transition-colors font-semibold cursor-pointer">
+                        <i class="fas fa-search mr-2"></i>SEARCH
+                    </div>
+                    <a href="#media" class="text-white hover:text-orange-300 transition-colors font-semibold">MEDIA ROOM</a>
                 </div>
             `;
       nav.appendChild(mobileMenuDiv);

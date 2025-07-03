@@ -160,16 +160,47 @@
         transform: translate(-50%, -50%) scale(1.1);
       }
 
-      .instagram-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
+      .slider {
+        -webkit-appearance: none;
+        appearance: none;
+        height: 6px;
+        background: rgba(255, 255, 255, 0.3);
+        outline: none;
+        border-radius: 3px;
       }
 
-      @media (max-width: 768px) {
-        .instagram-grid {
-          grid-template-columns: repeat(2, 1fr);
-        }
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        background: white;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 2px solid #1e40af;
+      }
+
+      .slider::-moz-range-thumb {
+        width: 20px;
+        height: 20px;
+        background: white;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 2px solid #1e40af;
+      }
+
+      /* Dropdown hover effects */
+      .dropdown-menu {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+      }
+
+      .dropdown:hover .dropdown-menu {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
       }
     </style>
   </head>
