@@ -377,7 +377,7 @@ function showCookieConsent() {
                     We use cookies to enhance your browsing experience and provide personalized content.
                 </p>
                 <div class="flex space-x-4">
-                    <button onclick="acceptCookies()" class="bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded text-sm">
+                    <button onclick="acceptCookies()" class="bg-red-500 hover:bg-red-600 px-4 py-2 rounded text-sm">
                         Accept
                     </button>
                     <button onclick="declineCookies()" class="bg-gray-600 hover:bg-gray-700 px-4 py-2 rounded text-sm">
